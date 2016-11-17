@@ -21,8 +21,11 @@ To access computed information in real-time, I recommend to implement your own O
 1. Install DSO. We need DSO to be compiled with OpenCV (to read the vignette image), and with Pangolin (for 3D visualization).
 2. run 
 
-		export DSO_PATH=[PATH_TO_DSO]/dso
-		rosmake
+		cd ~/catkin_ws/src  #
+		git clone -b catkin https://github.com/LinHuican/dso_ros
+		cd ..
+		catkin_make
+		
 	
 
 
@@ -34,6 +37,9 @@ everything as described in the DSO project - only this is for real-time camera i
 			calib=XXXXX/camera.txt \
 			gamma=XXXXX/pcalib.txt \
 			vignette=XXXXX/vignette.png \
+examples
+		cd src/dso_ros/src/examples
+		sh dso_live.sh
 
 
 
