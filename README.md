@@ -43,7 +43,8 @@ everything as described in the DSO project - only this is for real-time camera i
 			gamma=XXXXX/pcalib.txt \
 			vignette=XXXXX/vignette.png \
 examples
-		cd src/dso_ros/src/examples
+
+		cd src/dso_ros/examples
 		sh dso_live.sh
 
 
