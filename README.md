@@ -1,3 +1,6 @@
+**The catkin branch is updated, which simplify the installation via catkin.**
+
+
 # ROS Wrapper around DSO: Direct Sparse Odometry
 
 For more information see
@@ -19,9 +22,11 @@ To access computed information in real-time, I recommend to implement your own O
 # 1. Installation
 
 1. Install DSO. We need DSO to be compiled with OpenCV (to read the vignette image), and with Pangolin (for 3D visualization).
-2. run 
+2. To set a correct DSO_PATH, adjust the line in CMakeLists.txt:
+		set(DSO_PATH /home/qianglv/dso)
+3. run 
 
-		cd ~/catkin_ws/src  #
+		cd ~/catkin_ws/src  #catkin Workspace
 		git clone -b catkin https://github.com/LinHuican/dso_ros
 		cd ..
 		catkin_make
